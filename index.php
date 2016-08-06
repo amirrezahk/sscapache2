@@ -1,7 +1,7 @@
 <?php
 ob_start();
-define('API_KEY','XXXX');
-$the_admin_id = 0;
+define('API_KEY','216117889:AAFkBtpZhvFU7hfrYd20IYAqpHXSsmnlwpU');
+$the_admin_id = 102117869;
 
 file_put_contents("count",file_get_contents("count")+1);
 
@@ -204,7 +204,7 @@ echo 'QUERY ...';
                         'id'=>base64_encode(rand(5,555)),
                         'title'=>'برای ارسال کد کلیک کنید',
                         'input_message_content'=>[
-                            'message_text'=>'@sscapachebot getlist-'.$theListId
+                            'message_text'=>'@Tele_cat2-bot getlist-'.$theListId
                         ]
                     ]])
             ]));
