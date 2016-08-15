@@ -990,7 +990,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@fekre-ziba_ch_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@fekre_ziba_ch_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1186,7 +1186,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@fekre-ziba_ch_bot getbanner-'.getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@fekre_ziba_ch_bot getbanner-'.getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1264,7 +1264,7 @@ https://telegram.me/sscapachebot
 //                        'chat_id'=>$userID
 //                    ]);
 //                    makeHTTPRequest('sendMessage',[
-//                        'text'=>'@fekre-ziba_ch_bot getbanner-'.getCurrentMakeID($userID),
+//                        'text'=>'@fekre_ziba_ch_bot getbanner-'.getCurrentMakeID($userID),
 //                        'chat_id'=>$userID
 //                    ]);
 //                }break;
@@ -1368,7 +1368,7 @@ https://telegram.me/sscapachebot
                         'chat_id'=>$userID
                     ]);
                     makeHTTPRequest('sendMessage',[
-                        'text'=>'@fekre-ziba_ch_bot getbanner-'.getCurrentMakeID($userID),
+                        'text'=>'@fekre_ziba_ch_bot getbanner-'.getCurrentMakeID($userID),
                         'chat_id'=>$userID
                     ]);
                 }break;
