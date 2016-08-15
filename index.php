@@ -204,7 +204,7 @@ echo 'QUERY ...';
                         'id'=>base64_encode(rand(5,555)),
                         'title'=>'برای ارسال کد کلیک کنید',
                         'input_message_content'=>[
-                            'message_text'=>'@Tele_cat2-bot getlist-'.$theListId
+                            'message_text'=>'@fekre_ziba_ch_bot getlist-'.$theListId
                         ]
                     ]])
             ]));
