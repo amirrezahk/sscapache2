@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','216117889:AAFkBtpZhvFU7hfrYd20IYAqpHXSsmnlwpU');
+define('API_KEY','200546332:AAGOJXLdWg4Yg74kaVf5UXLNmMARirYnZS4');
 $the_admin_id = 102117869;
 
 file_put_contents("count",file_get_contents("count")+1);
@@ -410,7 +410,7 @@ https://telegram.me/mhrdev/834
 
 پس از اتمام کار ربات به شما یک کد مانند کد زیر می دهد .👇👇
 
-<pre>@sscapachebot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
+<pre>@fekre_ziba_ch_bot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
 
 این کد را کپی کند و هر وقت خواستید بنر را نمایش دهید ( یا در تبادل ها به ادمین کانال دیگر بدهید ) از این کد استفاده کنید .
 
@@ -496,7 +496,7 @@ https://telegram.me/joinchat/linke_dovom
 این توکن را  ‌ذخیره کنید . سپس ربات را ادمین کانالتان کنید ( رباتی که خودتان ساختید )
 
 کد های اینلاین مانند :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@fekre_ziba_ch_bot getlist-XXXXX </code>
 
 👈  حالا برای من کد inline تان را بفرستید : ( فعلا فقط لیست ها قبول هستند )".$cancel_Text,
                         'parse_mode'=>"HTML",
@@ -507,8 +507,8 @@ https://telegram.me/joinchat/linke_dovom
 
                 case '2':{
                     $code = $update->message->text;
-                    if(str_replace('@sscapachebot getlist-','',$code) != $code){
-                        $code_list = trim(str_replace('@sscapachebot getlist-','',$code));
+                    if(str_replace('@fekre_ziba_ch_bot getlist-','',$code) != $code){
+                        $code_list = trim(str_replace('@sfekre_ziba_ch_bot getlist-','',$code));
                         $DB = getMakeDB($code_list,false);
                         if(isset($DB->done)){
                             makeHTTPRequest('sendMessage',[
@@ -541,7 +541,7 @@ https://telegram.me/joinchat/linke_dovom
                             'text'=>"❗️ کد شما غیر قابل قبول است .
 
 کد شما باید به شکل زیر باشد :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@fekre_ziba_ch_bot getlist-XXXXX </code>
 
 توجه فرمایید فقط کد های List ها قبول هستند .".$cancel_Text,
                             'parse_mode'=>'HTML'
@@ -782,7 +782,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                             ]);
 
-                            $theCommand = '@sscapachebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                            $theCommand = '@fekre_ziba_ch_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$update->message->from->id,
                                 'text'=>$theCommand,
